@@ -11,6 +11,7 @@ addons:
     - cmake
     - bison
     - flex
+    - asio
 before_install:
 - pip install --upgrade --user awscli
 - gem update --system
