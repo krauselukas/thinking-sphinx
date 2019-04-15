@@ -28,7 +28,7 @@ load_sphinx () {
   else
     curl $url -o sphinx.tar.gz
     tar -zxvf sphinx.tar.gz
-    mv sphinx-$version/bin/* /usr/local/bin/.
+    sudo mv sphinx-$version/bin/* /usr/local/bin/.
   fi
 }
 
