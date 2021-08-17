@@ -40,7 +40,7 @@ class ThinkingSphinx::Callbacks::Appender
   end
 
   def add_real_time_callbacks
-    model.after_save ThinkingSphinx::RealTime.callback_for(
+    model.after_commit ThinkingSphinx::RealTime.callback_for(
       reference, path, &block
     )
   end
